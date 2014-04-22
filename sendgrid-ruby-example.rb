@@ -25,7 +25,7 @@ email.set_tos(tos)
 .add_header('X-Sent-Using', 'SendGrid-API')
 .add_attachment('gif.gif', 'owl.gif')
 
-sendgrid = SendgridRuby::SendgridRuby.new(sendgrid_username, sendgrid_password)
+sendgrid = SendgridRuby::Sendgrid.new(sendgrid_username, sendgrid_password)
 #sendgrid.debug_output = true # remove comment if you need to see the request
 response = sendgrid.send(email)
 puts response
