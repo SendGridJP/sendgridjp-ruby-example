@@ -4,7 +4,7 @@ GEM
     mime-types (2.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    sendgrid-ruby (0.0.1)
+    sendgrid_ruby (0.0.1)
       rest-client
       smtpapi
     smtpapi (0.0.2)
@@ -13,4 +13,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sendgrid-ruby
+  sendgrid_ruby

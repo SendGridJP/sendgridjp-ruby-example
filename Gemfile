@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 
-#gem 'yaml'
-gem 'sendgrid-ruby'
+gem 'sendgrid_ruby'
  

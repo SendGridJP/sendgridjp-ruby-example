@@ -1,5 +1,6 @@
-require 'sendgrid'
-require 'sendgrid/email'
+require 'sendgrid_ruby'
+require 'sendgrid_ruby/version'
+require 'sendgrid_ruby/email'
 require 'yaml'
 
 config = YAML.load_file("config.yml")
@@ -8,7 +9,7 @@ sendgrid_password = config["SENDGRID"]["SENDGRID_PASSWORD"]
 from = config["SENDGRID"]["FROM"]
 tos = config["SENDGRID"]["TOS"].split(',')
 
-email = SendGrid::Email.new
+email = SendgridRuby::Email.new
 email.set_tos(tos)
 .set_from(from)
 .set_from_name("送信者名")
@@ -24,7 +25,7 @@ email.set_tos(tos)
 .add_header('X-Sent-Using', 'SendGrid-API')
 .add_attachment('gif.gif', 'owl.gif')
 
-sendgrid = SendGrid::SendGrid.new(sendgrid_username, sendgrid_password)
+sendgrid = SendgridRuby::SendgridRuby.new(sendgrid_username, sendgrid_password)
 #sendgrid.debug_output = true # remove comment if you need to see the request
 response = sendgrid.send(email)
 puts response
