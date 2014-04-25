@@ -23,10 +23,10 @@ SENDGRID:
   TOS: you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
   FROM: you@youremail.com
 ```
-SENDGRID_USERNAME is the username of SendGrid.
-SENDGRID_PASSWORD is the password of SendGrid.
-TOS: Therecipient list that is comma seperated.
-FROM: From address.
+SENDGRID_USERNAME is the username of SendGrid.  
+SENDGRID_PASSWORD is the password of SendGrid.  
+TOS: Therecipient list that is comma seperated.  
+FROM: From address.  
 
 
 ========================
