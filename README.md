@@ -1,5 +1,4 @@
 # sendgridjp-ruby-example
-========================
 
 This is an example of using the [sendgrid-ruby gem](https://github.com/sendgridjp/sendgrid-ruby).
 
@@ -41,7 +40,7 @@ cd sendgridjp-ruby-example
 cp config.yml.example config.yml
 # config.ymlファイルを編集してください
 bundle install
-ruby -f sendgrid-ruby-example.php
+ruby -f sendgridjp-ruby-example.php
 ```
 
 ## config.ymlファイルの編集
