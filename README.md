@@ -7,21 +7,20 @@ This is an example of using the [sendgrid-ruby gem](https://github.com/sendgridj
 ```bash
 git clone http://github.com/sendgridjp/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
-cp config.yml.example config.yml
-# change the values in config.yml
+cp .env.example .env
+# change the values in .env
 bundle install
 ruby -f sendgrid-ruby-example.php
 ```
 
-## Change the values in config.yml
-config.yml is here:
+## Change the values in .env
+.env is here:
 
 ```bash
-SENDGRID:
-  SENDGRID_USERNAME: your_username
-  SENDGRID_PASSWORD: your_password
-  TOS: you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
-  FROM: you@youremail.com
+SENDGRID_USERNAME=your_username
+SENDGRID_PASSWORD=your_password
+TOS=you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
+FROM=you@youremail.com
 ```
 SENDGRID_USERNAME is the username of SendGrid.  
 SENDGRID_PASSWORD is the password of SendGrid.  
@@ -37,21 +36,20 @@ FROM: From address.
 ```bash
 git clone http://github.com/sendgridjp/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
-cp config.yml.example config.yml
-# config.ymlファイルを編集してください
+cp .env.example .env
+# .envファイルを編集してください
 bundle install
 ruby -f sendgridjp-ruby-example.php
 ```
 
-## config.ymlファイルの編集
-config.ymlファイルは以下のような内容になっています。
+## .envファイルの編集
+.envファイルは以下のような内容になっています。
 
 ```bash
-SENDGRID:
-  SENDGRID_USERNAME: your_username
-  SENDGRID_PASSWORD: your_password
-  TOS: you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
-  FROM: you@youremail.com
+SENDGRID_USERNAME=your_username
+SENDGRID_PASSWORD=your_password
+TOS=you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
+FROM=you@youremail.com
 ```
 SENDGRID_USERNAME:SendGridのユーザ名を指定してください。  
 SENDGRID_PASSWORD:SendGridのパスワードを指定してください。  
