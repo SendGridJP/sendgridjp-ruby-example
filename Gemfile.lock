@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     mime-types (2.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -13,4 +16,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   sendgrid_ruby

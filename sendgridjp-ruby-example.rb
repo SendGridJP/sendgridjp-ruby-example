@@ -2,13 +2,13 @@
 require 'sendgrid_ruby'
 require 'sendgrid_ruby/version'
 require 'sendgrid_ruby/email'
-require 'yaml'
+require 'dotenv'
 
-config = YAML.load_file("config.yml")
-sendgrid_username = config["SENDGRID"]["SENDGRID_USERNAME"]
-sendgrid_password = config["SENDGRID"]["SENDGRID_PASSWORD"]
-from = config["SENDGRID"]["FROM"]
-tos = config["SENDGRID"]["TOS"].split(',')
+config = Dotenv.load
+sendgrid_username = ENV["SENDGRID_USERNAME"]
+sendgrid_password = ENV["SENDGRID_PASSWORD"]
+from = ENV["FROM"]
+tos = ENV["TOS"].split(',')
 
 email = SendgridRuby::Email.new
 email.set_tos(tos)
