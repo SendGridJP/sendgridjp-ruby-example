@@ -22,7 +22,7 @@ email.set_tos(tos)
 .add_substitution("place", ["office", "home", "office"])
 .add_section('office', '中野')
 .add_section('home', '目黒')
-.add_category('カテゴリ1')
+.add_category('category1')
 .add_header('X-Sent-Using', 'SendGrid-API')
 .add_attachment('gif.gif', 'owl.gif')
 

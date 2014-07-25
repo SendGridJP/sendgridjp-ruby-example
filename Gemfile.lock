@@ -4,13 +4,15 @@ GEM
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
-    mime-types (2.2)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    sendgrid_ruby (0.0.1)
+    mime-types (2.3)
+    netrc (0.7.7)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    sendgrid_ruby (0.0.3)
       rest-client
       smtpapi
-    smtpapi (0.0.2)
+    smtpapi (0.0.3)
 
 PLATFORMS
   ruby
