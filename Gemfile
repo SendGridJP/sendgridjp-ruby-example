@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'sendgrid_ruby'
-gem 'dotenv' 
+gem 'sendgrid-ruby', '0.0.3'
+gem 'dotenv'

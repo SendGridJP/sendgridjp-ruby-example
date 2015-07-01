@@ -1,6 +1,6 @@
 # sendgridjp-ruby-example
 
-This is an example of using the [sendgrid-ruby gem](https://github.com/sendgridjp/sendgrid-ruby).
+This is an example of using the [sendgrid-ruby gem](https://github.com/sendgrid/sendgrid-ruby).
 
 ## Usage
 
@@ -10,7 +10,7 @@ cd sendgridjp-ruby-example
 cp .env.example .env
 # change the values in .env
 bundle install
-ruby -f sendgrid-ruby-example.php
+ruby sendgridjp-ruby-example.rb
 ```
 
 ## Change the values in .env
@@ -29,7 +29,7 @@ FROM: From address.
 
 
 ========================
- 本コードは[sendgrid-ruby gem](https://github.com/sendgridjp/sendgrid-ruby)の利用サンプルです。
+ 本コードは[sendgrid-ruby gem](https://github.com/sendgrid/sendgrid-ruby)の利用サンプルです。
 
 ## 使い方
 
@@ -39,7 +39,7 @@ cd sendgridjp-ruby-example
 cp .env.example .env
 # .envファイルを編集してください
 bundle install
-ruby -f sendgridjp-ruby-example.php
+ruby sendgridjp-ruby-example.rb
 ```
 
 ## .envファイルの編集
@@ -55,5 +55,3 @@ SENDGRID_USERNAME:SendGridのユーザ名を指定してください。
 SENDGRID_PASSWORD:SendGridのパスワードを指定してください。  
 TOS:宛先をカンマ区切りで指定してください。  
 FROM:送信元アドレスを指定してください。  
-
-
