@@ -3,9 +3,11 @@ require 'sendgrid-ruby'
 require 'dotenv'
 
 Dotenv.load
+
 api_key = ENV['API_KEY']
 from = ENV['FROM']
 tos = ENV['TOS'].split(',')
+
 
 client = SendGrid::Client.new do |c|
   c.api_key  = api_key
