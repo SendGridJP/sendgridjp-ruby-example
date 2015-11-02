@@ -3,14 +3,14 @@ require 'sendgrid-ruby'
 require 'dotenv'
 
 Dotenv.load
-sendgrid_username = ENV['SENDGRID_USERNAME']
-sendgrid_password = ENV['SENDGRID_PASSWORD']
+
+api_key = ENV['API_KEY']
 from = ENV['FROM']
 tos = ENV['TOS'].split(',')
 
+
 client = SendGrid::Client.new do |c|
-  c.api_user = sendgrid_username
-  c.api_key  = sendgrid_password
+  c.api_key  = api_key
 end
 
 header = Smtpapi::Header.new
@@ -33,4 +33,4 @@ mail = SendGrid::Mail.new do |m|
   m.add_attachment('gif.gif', 'owl.gif')
 end
 
-puts client.send(mail)
+puts client.send(mail).inspect
