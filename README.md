@@ -5,7 +5,7 @@ This is an example of using the [sendgrid-ruby gem](https://github.com/sendgrid/
 ## Usage
 
 ```bash
-git clone http://github.com/sendgridjp/sendgridjp-ruby-example.git
+git clone git@github.com:SendGridJP/sendgridjp/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
 cp .env.example .env
 # change the values in .env
@@ -17,11 +17,11 @@ ruby sendgridjp-ruby-example.rb
 .env is here:
 
 ```bash
-API_KEY=api_key
+SENDGRID_API_KEY=api_key
 TOS=you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
 FROM=you@youremail.com
 ```
-API_KEY: SendGrid [API Key](https://sendgrid.com/docs/User_Guide/Settings/api_keys.html)  
+SENDGRID_API_KEY: SendGrid [API Key](https://sendgrid.com/docs/User_Guide/Settings/api_keys.html)  
 TOS: Therecipient list that is comma seperated.  
 FROM: From address.  
 
@@ -32,7 +32,7 @@ FROM: From address.
 ## 使い方
 
 ```bash
-git clone http://github.com/sendgridjp/sendgridjp-ruby-example.git
+git clone git@github.com:SendGridJP/sendgridjp/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
 cp .env.example .env
 # .envファイルを編集してください
@@ -44,10 +44,10 @@ ruby sendgridjp-ruby-example.rb
 .envファイルは以下のような内容になっています。
 
 ```bash
-API_KEY=api_key
+SENDGRID_API_KEY=api_key
 TOS=you@youremail.com,friend1@friendemail.com,friend2@friendemail.com
 FROM=you@youremail.com
 ```
-API_KEY:SendGridの[API Key](https://sendgrid.kke.co.jp/docs/User_Manual_JP/Settings/api_keys.html)を指定してください。  
+SENDGRID_API_KEY:SendGridの[API Key](https://sendgrid.kke.co.jp/docs/User_Manual_JP/Settings/api_keys.html)を指定してください。  
 TOS:宛先をカンマ区切りで指定してください。  
 FROM:送信元アドレスを指定してください。  
