@@ -5,7 +5,7 @@ This is an example of using the [sendgrid-ruby gem](https://github.com/sendgrid/
 ## Usage
 
 ```bash
-git clone git@github.com:SendGridJP/sendgridjp/sendgridjp-ruby-example.git
+git clone git@github.com:SendGridJP/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
 cp .env.example .env
 # change the values in .env
@@ -32,7 +32,7 @@ FROM: From address.
 ## 使い方
 
 ```bash
-git clone git@github.com:SendGridJP/sendgridjp/sendgridjp-ruby-example.git
+git clone git@github.com:SendGridJP/sendgridjp-ruby-example.git
 cd sendgridjp-ruby-example
 cp .env.example .env
 # .envファイルを編集してください
