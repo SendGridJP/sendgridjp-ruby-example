@@ -14,4 +14,4 @@ DEPENDENCIES
   sendgrid-ruby (= 6.4.0)
 
 BUNDLED WITH
-   2.1.2
+   1.17.2
