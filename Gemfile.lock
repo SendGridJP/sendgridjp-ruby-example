@@ -10,7 +10,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv
+  dotenv (>= 2.0.0)
   sendgrid-ruby (= 6.4.0)
 
 BUNDLED WITH

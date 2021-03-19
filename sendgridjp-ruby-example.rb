@@ -4,7 +4,7 @@ include SendGrid
 
 # .envから環境変数を読み込む
 Dotenv.load
-sendgrid_api_key = ENV['SENDGRID_API_KEY']
+sendgrid_api_key = ENV['API_KEY']
 from = ENV['FROM']
 tos = ENV['TOS'].split(',')
 
